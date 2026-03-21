@@ -13,7 +13,7 @@ namespace BookStoreApi.Interfaces
         Task<Book> GetBookByIdAsync(int id);
         Task<Book> CreateBookAsync(BookCreateDto bookCreateDto);
         Task<Book> UpdateBookAsync(int id, BookCreateDto bookCreateDto);
-        Task<Book> DeleteBookAsync(int id);
+        Task<bool> DeleteBookAsync(int id);
 
     }
 }
