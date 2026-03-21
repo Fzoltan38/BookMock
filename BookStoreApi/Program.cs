@@ -1,4 +1,7 @@
 
+using BookStoreApi.Data;
+using Microsoft.EntityFrameworkCore;
+
 namespace BookStoreApi
 {
     public class Program
@@ -6,6 +9,12 @@ namespace BookStoreApi
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
+
+            var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+
+            builder.Services.AddDbContext<AppDbContext>(options =>
+            options.UseMySQL(connectionString)
+            );
 
             // Add services to the container.
 
