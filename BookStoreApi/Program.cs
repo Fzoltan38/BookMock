@@ -1,5 +1,8 @@
 
 using BookStoreApi.Data;
+using BookStoreApi.Interfaces;
+using BookStoreApi.Repositories;
+using BookStoreApi.Services;
 using Microsoft.EntityFrameworkCore;
 
 namespace BookStoreApi
@@ -9,6 +12,9 @@ namespace BookStoreApi
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
+
+            builder.Services.AddScoped<IBookRepository, BookRepository>();
+            builder.Services.AddScoped<IBookService, BookService>();
 
             var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 
