@@ -56,6 +56,9 @@ namespace BookStoreApi.Controllers
             return CreatedAtAction(nameof(GetById), new { id = book.Id }, book);
         }
 
+        /// <summary>
+        /// Meglévő könyv módosítása
+        /// </summary>
         [HttpPut("{id:int}")]
         public async Task<IActionResult> Update(int id, [FromBody] BookUpdateDto bookUpdateDto)
         {
@@ -67,6 +70,24 @@ namespace BookStoreApi.Controllers
             }
 
             return Ok(book);
+
+        }
+
+        /// <summary>
+        /// Könyv törlése
+        /// </summary>
+
+        [HttpDelete("id:int")]
+        public async Task<IActionResult> Delete(int id)
+        {
+            var delete = await _bookService.DeleteBookAsync(id);
+
+            if (!delete)
+            {
+                return NotFound(new { message = "Nincs ilyen id-vel könyv!" });
+            }
+
+            return NoContent();
 
         }
     }
