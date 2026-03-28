@@ -59,7 +59,14 @@ namespace BookStoreApi.Controllers
         [HttpPut("{id:int}")]
         public async Task<IActionResult> Update(int id, [FromBody] BookUpdateDto bookUpdateDto)
         {
-            var book = await _bookService.UpdateBookAsync(id);
+            var book = await _bookService.UpdateBookAsync(id, bookUpdateDto);
+
+            if (book is null)
+            {
+                return NotFound(new { message = "Nincs ilyen id-vel könyv!" });
+            }
+
+            return Ok(book);
 
         }
     }
