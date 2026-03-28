@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "UhPQqzTN36w=",
+  "dgSpecHash": "dBWTFVORP9I=",
   "success": true,
-  "projectFilePath": "C:\\Users\\zoli\\Desktop\\2025_2026\\C#Oktav\\Tan1\\WebApi\\BookStoreApi\\BookStoreApi\\BookStoreApi.csproj",
+  "projectFilePath": "C:\\Users\\zoli\\Desktop\\Book\\BookMock\\BookStoreApi\\BookStoreApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\zoli\\.nuget\\packages\\bouncycastle.cryptography\\2.6.2\\bouncycastle.cryptography.2.6.2.nupkg.sha512",
     "C:\\Users\\zoli\\.nuget\\packages\\google.protobuf\\3.32.0\\google.protobuf.3.32.0.nupkg.sha512",

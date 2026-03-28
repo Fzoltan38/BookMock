@@ -35,7 +35,7 @@ namespace BookStoreApi.Services
 
         public async Task<bool> DeleteBookAsync(int id)
         {
-           return await _repository.DeleteAsync(id);
+            return await _repository.DeleteAsync(id);
         }
 
         public async Task<IEnumerable<Book>> GetAllBooksASync()
@@ -45,10 +45,10 @@ namespace BookStoreApi.Services
 
         public async Task<Book> GetBookByIdAsync(int id)
         {
-           return await _repository.GetByIdAsync(id);
+            return await _repository.GetByIdAsync(id);
         }
 
-        public async Task<Book> UpdateBookAsync(int id, BookCreateDto bookCreateDto)
+        public async Task<Book> UpdateBookAsync(int id, BookUpdateDto bookCreateDto)
         {
             var book = new Book
             {

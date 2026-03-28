@@ -3094,11 +3094,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\zoli\\Desktop\\2025_2026\\C#Oktav\\Tan1\\WebApi\\BookStoreApi\\BookStoreApi\\BookStoreApi.csproj",
+      "projectUniqueName": "C:\\Users\\zoli\\Desktop\\Book\\BookMock\\BookStoreApi\\BookStoreApi.csproj",
       "projectName": "BookStoreApi",
-      "projectPath": "C:\\Users\\zoli\\Desktop\\2025_2026\\C#Oktav\\Tan1\\WebApi\\BookStoreApi\\BookStoreApi\\BookStoreApi.csproj",
+      "projectPath": "C:\\Users\\zoli\\Desktop\\Book\\BookMock\\BookStoreApi\\BookStoreApi.csproj",
       "packagesPath": "C:\\Users\\zoli\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\zoli\\Desktop\\2025_2026\\C#Oktav\\Tan1\\WebApi\\BookStoreApi\\BookStoreApi\\obj\\",
+      "outputPath": "C:\\Users\\zoli\\Desktop\\Book\\BookMock\\BookStoreApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -3132,7 +3132,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "10.0.200"
+      "SdkAnalysisLevel": "9.0.300"
     },
     "frameworks": {
       "net8.0": {
@@ -3172,7 +3172,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

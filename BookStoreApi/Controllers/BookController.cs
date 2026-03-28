@@ -1,6 +1,5 @@
 ﻿using BookStoreApi.DTOs;
 using BookStoreApi.Interfaces;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BookStoreApi.Controllers
@@ -39,9 +38,9 @@ namespace BookStoreApi.Controllers
         {
             var book = await _bookService.GetBookByIdAsync(id);
 
-            if (book == null) 
+            if (book == null)
             {
-                return NotFound(new { message = "Nincs találat!"});
+                return NotFound(new { message = "Nincs találat!" });
             }
 
             return Ok(book);
@@ -56,5 +55,13 @@ namespace BookStoreApi.Controllers
             var book = await _bookService.CreateBookAsync(bookCreateDto);
             return CreatedAtAction(nameof(GetById), new { id = book.Id }, book);
         }
+
+        [HttpPut("{id:int}")]
+        public async Task<IActionResult> Update(int id, [FromBody] BookUpdateDto bookUpdateDto)
+        {
+            var book = await _bookService.UpdateBookAsync(id);
+
+        }
     }
 }
+

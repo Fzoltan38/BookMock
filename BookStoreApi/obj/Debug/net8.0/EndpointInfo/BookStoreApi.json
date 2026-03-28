@@ -5,41 +5,66 @@
     "version": "1.0"
   },
   "paths": {
-    "/WeatherForecast": {
+    "/api/Book": {
       "get": {
         "tags": [
-          "WeatherForecast"
+          "Book"
         ],
-        "operationId": "GetWeatherForecast",
         "responses": {
           "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/WeatherForecast"
-                  }
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/WeatherForecast"
-                  }
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/WeatherForecast"
-                  }
-                }
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Book"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/BookCreateDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/BookCreateDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/BookCreateDto"
               }
             }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Book/{id}": {
+      "get": {
+        "tags": [
+          "Book"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
           }
         }
       }
@@ -47,25 +72,40 @@
   },
   "components": {
     "schemas": {
-      "WeatherForecast": {
+      "BookCreateDto": {
+        "required": [
+          "author",
+          "isbn",
+          "title"
+        ],
         "type": "object",
         "properties": {
-          "date": {
-            "type": "string",
-            "format": "date"
+          "title": {
+            "maxLength": 200,
+            "minLength": 1,
+            "type": "string"
           },
-          "temperatureC": {
+          "author": {
+            "maxLength": 150,
+            "minLength": 1,
+            "type": "string"
+          },
+          "isbn": {
+            "maxLength": 20,
+            "minLength": 1,
+            "type": "string"
+          },
+          "price": {
+            "maximum": 100000,
+            "minimum": 1,
             "type": "integer",
             "format": "int32"
           },
-          "temperatureF": {
+          "publishedYear": {
+            "maximum": 2030,
+            "minimum": 1000,
             "type": "integer",
-            "format": "int32",
-            "readOnly": true
-          },
-          "summary": {
-            "type": "string",
-            "nullable": true
+            "format": "int32"
           }
         },
         "additionalProperties": false

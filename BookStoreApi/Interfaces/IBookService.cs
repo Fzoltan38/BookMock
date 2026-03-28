@@ -12,7 +12,7 @@ namespace BookStoreApi.Interfaces
         Task<IEnumerable<Book>> GetAllBooksASync();
         Task<Book> GetBookByIdAsync(int id);
         Task<Book> CreateBookAsync(BookCreateDto bookCreateDto);
-        Task<Book> UpdateBookAsync(int id, BookCreateDto bookCreateDto);
+        Task<Book> UpdateBookAsync(int id, BookUpdateDto bookCreateDto);
         Task<bool> DeleteBookAsync(int id);
 
     }
