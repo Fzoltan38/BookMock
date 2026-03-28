@@ -3,4 +3,5 @@
     <File Path=".gitignore" />
   </Folder>
   <Project Path="BookStoreApi/BookStoreApi.csproj" />
+  <Project Path="BookStoreTests/BookStoreTests.csproj" Id="674db735-9193-45fe-b3d0-427b397c6b9f" />
 </Solution>
