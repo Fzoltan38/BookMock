@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "dqezfrrHAo8=",
+  "dgSpecHash": "yZ4x6q3BSyo=",
   "success": true,
   "projectFilePath": "C:\\Users\\zoli\\Desktop\\Book\\BookMock\\BookStoreTests\\BookStoreTests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\zoli\\.nuget\\packages\\bouncycastle.cryptography\\2.6.2\\bouncycastle.cryptography.2.6.2.nupkg.sha512",
+    "C:\\Users\\zoli\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
     "C:\\Users\\zoli\\.nuget\\packages\\coverlet.collector\\6.0.0\\coverlet.collector.6.0.0.nupkg.sha512",
     "C:\\Users\\zoli\\.nuget\\packages\\fluentassertions\\8.9.0\\fluentassertions.8.9.0.nupkg.sha512",
     "C:\\Users\\zoli\\.nuget\\packages\\google.protobuf\\3.32.0\\google.protobuf.3.32.0.nupkg.sha512",
@@ -56,6 +57,7 @@
     "C:\\Users\\zoli\\.nuget\\packages\\microsoft.testplatform.objectmodel\\17.8.0\\microsoft.testplatform.objectmodel.17.8.0.nupkg.sha512",
     "C:\\Users\\zoli\\.nuget\\packages\\microsoft.testplatform.testhost\\17.8.0\\microsoft.testplatform.testhost.17.8.0.nupkg.sha512",
     "C:\\Users\\zoli\\.nuget\\packages\\microsoft.win32.primitives\\4.3.0\\microsoft.win32.primitives.4.3.0.nupkg.sha512",
+    "C:\\Users\\zoli\\.nuget\\packages\\moq\\4.20.72\\moq.4.20.72.nupkg.sha512",
     "C:\\Users\\zoli\\.nuget\\packages\\mysql.data\\9.6.0\\mysql.data.9.6.0.nupkg.sha512",
     "C:\\Users\\zoli\\.nuget\\packages\\mysql.entityframeworkcore\\8.0.22\\mysql.entityframeworkcore.8.0.22.nupkg.sha512",
     "C:\\Users\\zoli\\.nuget\\packages\\netstandard.library\\1.6.1\\netstandard.library.1.6.1.nupkg.sha512",
