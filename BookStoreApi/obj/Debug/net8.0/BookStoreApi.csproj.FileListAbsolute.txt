@@ -259,3 +259,4 @@ C:\Users\zoli\Desktop\Book\BookMock\BookStoreApi\obj\Debug\net8.0\refint\BookSto
 C:\Users\zoli\Desktop\Book\BookMock\BookStoreApi\obj\Debug\net8.0\BookStoreApi.pdb
 C:\Users\zoli\Desktop\Book\BookMock\BookStoreApi\obj\Debug\net8.0\BookStoreApi.genruntimeconfig.cache
 C:\Users\zoli\Desktop\Book\BookMock\BookStoreApi\obj\Debug\net8.0\ref\BookStoreApi.dll
+C:\Users\zoli\Desktop\Book\BookMock\BookStoreApi\obj\Debug\net8.0\swae.build.ex.cache
